@@ -42,8 +42,6 @@ window.addEventListener('scroll', handleScroll);
 // Initial check in case elements are in view on load
 handleScroll();
 
-const toggle = document.getElementById('theme-toggle');
-
-toggle.addEventListener('change', () => {
-    document.body.classList.toggle('light-mode');
+document.getElementById('theme-toggle').addEventListener('change', function() {
+    document.body.classList.toggle('light-mode', this.checked);
 });
