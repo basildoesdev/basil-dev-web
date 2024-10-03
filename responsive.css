@@ -1,0 +1,182 @@
+/* General mobile styling */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .logo {
+        font-size: 1.25rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .toggle-container {
+        margin-bottom: 1rem;
+    }
+
+    #welcome {
+        height: 70vh;
+        padding: 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .cta-btn {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    /* Adjust service cards grid */
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 1rem;
+    }
+
+    #contact {
+        padding: 2rem 1rem;
+    }
+
+    .social-media a {
+        margin: 0 0.5rem;
+    }
+}
+
+/* Tablet styling */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header {
+        padding: 1.5rem 2rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    #welcome {
+        height: 75vh;
+        padding: 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .cta-btn {
+        padding: 0.75rem 1.25rem;
+        font-size: 1.1rem;
+    }
+
+    /* Adjust service cards grid */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-card {
+        padding: 1.25rem;
+    }
+
+    #contact {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .social-media a {
+        margin: 0 0.75rem;
+    }
+}
+
+/* Large screens and desktops */
+@media (min-width: 1025px) {
+    #welcome {
+        height: 80vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .cta-btn {
+        padding: 0.75rem 1.5rem;
+    }
+
+    /* Services grid for large screens */
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .service-card {
+        padding: 1.5rem;
+    }
+
+    #contact {
+        padding: 3rem 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .toggle-container {
+        display: none; 
+    }
+    header{
+        padding-bottom: 0;
+    }
+
+    
+}
+
+@media (max-width: 480px) {
+    .toggle-container {
+        display: none; 
+    }
+    header{
+        padding-bottom: 0;
+    }
+
+    
+}
+
+/* Fade-in and slide-up effect */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    opacity: 0;  /* Start fully transparent */
+    transform: translateY(20px);  /* Start 20px lower */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;  /* Smooth transition */
+}
+
+.fade-in-up.active {
+    opacity: 1;  /* Fully visible when activated */
+    transform: translateY(0);  /* Back to original position */
+}
+
+.scroll-triggered {
+    opacity: 1;
+    visibility: visible;
+}
+
+
